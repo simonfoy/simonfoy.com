@@ -12,7 +12,7 @@ function App() {
   return (
     <Container>
       <Home/>
-      <About/>
+      {/* <About/> */}
     </Container>
   )
 }
