@@ -4,7 +4,7 @@ import styled, { createGlobalStyle } from 'styled-components'
 import Navbar from '../components/NavBar'
 import ReactTyped from 'react-typed'
 import Footer from '../components/Footer'
-import { FaCss3Alt, FaExternalLinkAlt, FaGithub, FaHtml5, FaNodeJs, FaReact } from 'react-icons/fa'
+import { FaCss3Alt, FaExternalLinkAlt, FaGithub, FaHtml5, FaJava, FaNodeJs, FaReact } from 'react-icons/fa'
 
 const TypedStyles = createGlobalStyle`
 
@@ -219,7 +219,7 @@ const ProjectDescription = styled.p`
     margin-bottom: 10px;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
 `;
@@ -233,6 +233,10 @@ const SkillIcons = styled.div`
 
 const StyledReact = styled(FaReact)`
     color: #61DAFB;
+`;
+
+const StyledJava = styled(FaJava)`
+    color: #007396;
 `;
 
 const Home = () => {
@@ -296,8 +300,25 @@ const Home = () => {
                 <ProjectContainer>
                     <ProjectCard>
                         <ProjectTopRight>
-                            <LogoLink href="github-link-here"><FaGithub size={18} /></LogoLink>
-                            <LogoLink href="https://simonfoy.com"><FaExternalLinkAlt size={17} /></LogoLink>
+                            <LogoLink href="https://github.com/simonfoy/ServerSettingsGUI" target="_blank"><FaGithub size={18} /></LogoLink>
+                            <LogoLink href="https://github.com/simonfoy/ServerSettingsGUI" target="_blank"><FaExternalLinkAlt size={17} /></LogoLink>
+                        </ProjectTopRight>
+                        <ProjectTitleContainer>
+                            <ProjectIcon src="assets/projects/portfolio/logo.png" alt="Project Icon" />
+                            <ProjectTitle>ServerSettingsGUI</ProjectTitle>
+                        </ProjectTitleContainer>
+                        <ProjectDescription>
+                            A dynamic and user-friendly Spigot plugin designed for server administrators and players 
+                            to easily access and toggle specific game rules without diving into commands.
+                        </ProjectDescription>
+                        <SkillIcons>
+                            <StyledJava size={24} title="Java" />
+                        </SkillIcons>
+                    </ProjectCard>
+                    <ProjectCard>
+                        <ProjectTopRight>
+                            <LogoLink href="https://github.com/simonfoy/simonfoy.com" target="_blank"><FaGithub size={18} /></LogoLink>
+                            <LogoLink href="https://simonfoy.com" target="_blank"><FaExternalLinkAlt size={17} /></LogoLink>
                         </ProjectTopRight>
                         <ProjectTitleContainer>
                             <ProjectIcon src="assets/projects/portfolio/logo.png" alt="Project Icon" />
@@ -312,28 +333,15 @@ const Home = () => {
                     </ProjectCard>
                     <ProjectCard>
                         <ProjectTopRight>
-                            <LogoLink href="github-link-here"><FaGithub size={18} /></LogoLink>
-                            <LogoLink href="https://simonfoy.com"><FaExternalLinkAlt size={17} /></LogoLink>
+                            <LogoLink href="www.github.com/simonfoy" target="_blank"><FaGithub size={18} /></LogoLink>
+                            <LogoLink href="simonfoy.com"><FaExternalLinkAlt size={17} /></LogoLink>
                         </ProjectTopRight>
                         <ProjectTitleContainer>
                             <ProjectIcon src="assets/projects/portfolio/logo.png" alt="Project Icon" />
-                            <ProjectTitle>Portfolio</ProjectTitle>
+                            <ProjectTitle>Coming Soon...</ProjectTitle>
                         </ProjectTitleContainer>
                         <ProjectDescription>
-                            Current version of my personal website.
-                        </ProjectDescription>
-                    </ProjectCard>
-                    <ProjectCard>
-                        <ProjectTopRight>
-                            <LogoLink href="github-link-here"><FaGithub size={18} /></LogoLink>
-                            <LogoLink href="live-link-here"><FaExternalLinkAlt size={17} /></LogoLink>
-                        </ProjectTopRight>
-                        <ProjectTitleContainer>
-                            <ProjectIcon src="assets/projects/portfolio/logo.png" alt="Project Icon" />
-                            <ProjectTitle>Portfolio</ProjectTitle>
-                        </ProjectTitleContainer>
-                        <ProjectDescription>
-                            Current version of my personal website.
+                            Coming Soon...
                         </ProjectDescription>
                     </ProjectCard>
                 </ProjectContainer>
