@@ -194,7 +194,7 @@ const Navbar = () => {
                     <DropdownMenu>
                         <ListItem2>Projects</ListItem2>
                         <ListItem2>Resume</ListItem2>
-                        <ListItem2>Github</ListItem2>
+                        <ListItem2 onClick={() => window.open('https://github.com/simonfoy', '_blank')}>Github</ListItem2>
                     </DropdownMenu>
                 </ListItem>
                 </List>
