@@ -105,7 +105,7 @@ const ListItem2 = styled.li`
   padding: 12px 16px;
   z-index: 1;
   text-align: center;
-  text-decoration: none; /* Remove text decoration */
+  text-decoration: none;
   color: #000;
   transition: background-color 0.2s, color 0.2s;
 
@@ -155,9 +155,9 @@ const Navbar = () => {
                         alt="Arrow down" 
                     />
                     <DropdownMenu>
-                        <Link to="/about"><ListItem2>About Me</ListItem2></Link>
-                        <Link to="/404"><ListItem2>Reviews</ListItem2></Link>
-                        <Link to="/404"><ListItem2>Vouches</ListItem2></Link>
+                        <Link style={{ color: 'inherit', textDecoration: 'inherit'}}to="/about"><ListItem2>About Me</ListItem2></Link>
+                        <Link style={{ color: 'inherit', textDecoration: 'inherit'}}to="/404"><ListItem2>Reviews</ListItem2></Link>
+                        <Link style={{ color: 'inherit', textDecoration: 'inherit'}}to="/404"><ListItem2>Vouches</ListItem2></Link>
                     </DropdownMenu>
                 </ListItem>
 
@@ -195,7 +195,7 @@ const Navbar = () => {
                         alt="Arrow down" 
                     />
                     <DropdownMenu>
-                        <ListItem2>Projects</ListItem2>
+                        <Link style={{ color: 'inherit', textDecoration: 'inherit'}}to="/projects"><ListItem2>Projects</ListItem2></Link>
                         <ListItem2>Resume</ListItem2>
                         <ListItem2 onClick={() => window.open('https://github.com/simonfoy', '_blank')}>Github</ListItem2>
                     </DropdownMenu>
