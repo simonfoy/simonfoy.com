@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import { Link } from "react-router-dom"
 
 const Section = styled.div`
     display: flex;
@@ -95,23 +96,25 @@ const ListItem = styled.li`
 `;
 
 const ListItem2 = styled.li`
-     cursor: pointer;
+  cursor: pointer;
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  min-width: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  text-align: center;
+  text-decoration: none; /* Remove text decoration */
+  color: #000;
+  transition: background-color 0.2s, color 0.2s;
 
-    position: relative;
-    background-color: #fff;
-    width: 100%;
-    min-width: 50px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-    text-align: center;
-
-    &:hover {
-        background-color: #3897d3;
-        color: white;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        font-weight: bold;
-    }
+  &:hover {
+    background-color: #3897d3;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+  }
 `;
 
 const ArrowDownIcon = styled.img`
@@ -140,7 +143,7 @@ const Navbar = () => {
     <Section>
         <Container>
             <Links>
-                <Logo src="assets/images/navbar/logo.png"/>
+                <Link to="/"><Logo src="assets/images/navbar/logo.png"/></Link>
                 <List>
                 <ListItem   
                     onMouseEnter={() => setHoveredItem('about')} 
@@ -152,9 +155,9 @@ const Navbar = () => {
                         alt="Arrow down" 
                     />
                     <DropdownMenu>
-                        <ListItem2>About Me</ListItem2>
-                        <ListItem2>Reviews</ListItem2>
-                        <ListItem2>Vouches</ListItem2>
+                        <Link to="/about"><ListItem2>About Me</ListItem2></Link>
+                        <Link to="/404"><ListItem2>Reviews</ListItem2></Link>
+                        <Link to="/404"><ListItem2>Vouches</ListItem2></Link>
                     </DropdownMenu>
                 </ListItem>
 

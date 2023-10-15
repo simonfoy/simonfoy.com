@@ -1,18 +1,18 @@
-import styled from "styled-components";
+import AboutPage from "./pages/AboutPage";
 import HomePage from "./pages/HomePage";
+import { HashRouter, Routes, Route } from 'react-router-dom';
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
 
-  const Container = styled.div`
-    height: 100vh;
-    background-color: #e5e7eb;
-  `;
-
   return (
-    <Container>
-      <HomePage/>
-      {/* <AboutPage/> */}
-    </Container>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<HomePage/>}/>
+        <Route path="/about" element={<AboutPage/>}/>
+        <Route path="/404" element={<NotFoundPage/>}/>
+      </Routes>
+    </HashRouter>
   )
 }
 
