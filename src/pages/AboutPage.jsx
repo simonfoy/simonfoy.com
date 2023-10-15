@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Banner from '../components/Banner'
-import Navbar from '../components/NavBar'
+import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 const Section = styled.div`
@@ -33,7 +33,7 @@ const Container = styled.div`
     }
 `
 
-const About = () => {
+const AboutPage = () => {
   return (
     <Section>
         <Banner/>
@@ -46,4 +46,4 @@ const About = () => {
   )
 }
 
-export default About
+export default AboutPage

@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import Home from "./pages/Home";
-import About from "./pages/About";
+import HomePage from "./pages/HomePage";
 
 function App() {
 
@@ -11,7 +10,7 @@ function App() {
 
   return (
     <Container>
-      <Home/>
+      <HomePage/>
       {/* <About/> */}
     </Container>
   )

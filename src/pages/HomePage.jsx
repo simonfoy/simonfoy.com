@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Banner from '../components/Banner'
 import styled, { createGlobalStyle } from 'styled-components'
-import Navbar from '../components/NavBar'
+import Navbar from '../components/Navbar'
 import ReactTyped from 'react-typed'
 import Footer from '../components/Footer'
 import { FaCss3Alt, FaExternalLinkAlt, FaGithub, FaHtml5, FaJava, FaNodeJs, FaReact } from 'react-icons/fa'
@@ -239,7 +239,7 @@ const StyledJava = styled(FaJava)`
     color: #007396;
 `;
 
-const Home = () => {
+const HomePage = () => {
     const pictures = [
       "assets/images/home/professional/professional1-glasses.png",
       "assets/images/home/professional/professional1.png",
@@ -353,4 +353,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default HomePage
