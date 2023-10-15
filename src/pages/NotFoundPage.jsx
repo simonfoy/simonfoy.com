@@ -17,7 +17,13 @@ const Section = styled.div`
   }
 `;
 
-const Container = styled.div`
+const Container1 = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+`
+
+const Container2 = styled.div`
   width: 950px;
   display: flex;
   justify-content: center;
@@ -48,14 +54,16 @@ const Description = styled.p`
 const NotFoundPage = () => {
   return (
     <Section>
-      <Banner />
-      <Navbar />
-      <Container>
+      <Container1>
+        <Banner/>
+        <Navbar/>
+      </Container1>
+      <Container2>
         <Title>Oops! Page Not Found</Title>
         <Description>
           It looks like you've stumbled upon a page that doesn't exist.
         </Description>
-      </Container>
+      </Container2>
       <Footer />
     </Section>
   );

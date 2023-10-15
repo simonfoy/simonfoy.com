@@ -17,7 +17,13 @@ const Section = styled.div`
   }
 `;
 
-const Container = styled.div`
+const Container1 = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+`
+
+const Container2 = styled.div`
   width: 950px;
   display: flex;
   justify-content: center;
@@ -48,15 +54,17 @@ const Description = styled.p`
 const ProjectsPage = () => {
   return (
     <Section>
+      <Container1>
         <Banner/>
         <Navbar/>
-        <Container>
-            <Title>Projects</Title>
-            <Description>
-                This page is unfinished. Check back later.
-            </Description>
-        </Container>
-        <Footer/>
+      </Container1>
+      <Container2>
+          <Title>Projects</Title>
+          <Description>
+              This page is unfinished. Check back later.
+          </Description>
+      </Container2>
+      <Footer/>
     </Section>
   )
 }

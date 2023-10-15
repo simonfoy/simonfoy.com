@@ -65,7 +65,13 @@ const Section = styled.div`
     }
 `
 
-const Container = styled.div`
+const Container1 = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+`
+
+const Container2 = styled.div`
     width: 950px;
     display: flex;
     justify-content: center;
@@ -264,9 +270,11 @@ const HomePage = () => {
     <>
     <TypedStyles/>
     <Section>
-        <Banner/>
-        <Navbar/>
-        <Container>
+        <Container1>
+            <Banner/>
+            <Navbar/>
+        </Container1>
+        <Container2>
             <Top>
                 <PictureContainer>
                     <PictureFrame onClick={handlePictureClick}>
@@ -346,7 +354,7 @@ const HomePage = () => {
                     </ProjectCard>
                 </ProjectContainer>
             </Bottom>
-        </Container>
+        </Container2>
         <Footer/>
     </Section>
     </>
