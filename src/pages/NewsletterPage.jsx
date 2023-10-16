@@ -59,7 +59,7 @@ const AboutPage = () => {
             <Navbar/>
         </Container1>
         <Container2>
-            <Title>About Me</Title>
+            <Title>Newsletter</Title>
             <Description>
                 This page is unfinished. Check back later.
             </Description>

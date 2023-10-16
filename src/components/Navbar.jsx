@@ -156,17 +156,19 @@ const Navbar = () => {
                     />
                     <DropdownMenu>
                         <Link style={{ color: 'inherit', textDecoration: 'inherit'}}to="/about"><ListItem2>About Me</ListItem2></Link>
-                        <Link style={{ color: 'inherit', textDecoration: 'inherit'}}to="/404"><ListItem2>Reviews</ListItem2></Link>
-                        <Link style={{ color: 'inherit', textDecoration: 'inherit'}}to="/404"><ListItem2>Vouches</ListItem2></Link>
+                        <Link style={{ color: 'inherit', textDecoration: 'inherit'}}to="/reviews"><ListItem2>Reviews</ListItem2></Link>
+                        <Link style={{ color: 'inherit', textDecoration: 'inherit'}}to="/vouches"><ListItem2>Vouches</ListItem2></Link>
                     </DropdownMenu>
                 </ListItem>
 
-                <ListItem 
-                    onMouseEnter={() => setHoveredItem('newsletter')} 
-                    onMouseLeave={() => setHoveredItem(null)}
-                    isHovered={hoveredItem === 'newsletter'}
-                >Newsletter 
-                </ListItem>
+                <Link style={{ color: 'inherit', textDecoration: 'inherit'}}to="/newsletter">
+                    <ListItem 
+                        onMouseEnter={() => setHoveredItem('newsletter')} 
+                        onMouseLeave={() => setHoveredItem(null)}
+                        isHovered={hoveredItem === 'newsletter'}
+                    >Newsletter 
+                    </ListItem>
+                </Link>
                 <ListItem 
                     onMouseEnter={() => setHoveredItem('services')} 
                     onMouseLeave={() => setHoveredItem(null)}

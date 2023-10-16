@@ -51,7 +51,7 @@ const Description = styled.p`
   color: black;
 `;
 
-const AboutPage = () => {
+const ReviewsPage = () => {
   return (
     <Section>
         <Container1>
@@ -59,7 +59,7 @@ const AboutPage = () => {
             <Navbar/>
         </Container1>
         <Container2>
-            <Title>About Me</Title>
+            <Title>Reviews</Title>
             <Description>
                 This page is unfinished. Check back later.
             </Description>
@@ -69,4 +69,4 @@ const AboutPage = () => {
   )
 }
 
-export default AboutPage
+export default ReviewsPage
