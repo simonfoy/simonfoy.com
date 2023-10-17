@@ -9,7 +9,7 @@ const Section = styled.div`
     background: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
-    @media only screen and (max-width: 940px) {
+    @media only screen and (max-width: 1000px) {
         width: 100%; 
     }
 `;
@@ -20,11 +20,11 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3px 0px;
+    padding: 5px 0px;
 
-    @media only screen and (max-width: 940px) {
+    @media only screen and (max-width: 1000px) {
         width: 100%; 
-        padding: 10px;
+        padding: 5px 10px;
         justify-content: space-between;
     }
 `;
@@ -49,7 +49,7 @@ const List = styled.ul`
     list-style: none;
     align-items: center;
 
-    @media only screen and (max-width: 940px) {
+    @media only screen and (max-width: 1000px) {
         display: none;
     }
 `;
@@ -130,7 +130,7 @@ const Menu = styled.img`
     top: 50%;
     transform: translateY(-50%);
 
-    @media only screen and (max-width: 940px) {
+    @media only screen and (max-width: 1000px) {
         display: flex;
         cursor: pointer;
         height: 50px;
