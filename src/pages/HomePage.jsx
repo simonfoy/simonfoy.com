@@ -308,6 +308,22 @@ const HomePage = () => {
                 <ProjectContainer>
                     <ProjectCard>
                         <ProjectTopRight>
+                            <LogoLink href="https://github.com/simonfoy/HungerGames" target="_blank"><FaGithub size={18} /></LogoLink>
+                            <LogoLink href="https://github.com/simonfoy/HungerGames" target="_blank"><FaExternalLinkAlt size={17} /></LogoLink>
+                        </ProjectTopRight>
+                        <ProjectTitleContainer>
+                            <ProjectIcon src="assets/projects/portfolio/logo.png" alt="Project Icon" />
+                            <ProjectTitle>Hunger Games</ProjectTitle>
+                        </ProjectTitleContainer>
+                        <ProjectDescription>
+                            An immersive Minecraft plugin that transports players into the intense world of the Hunger Games.
+                        </ProjectDescription>
+                        <SkillIcons>
+                            <StyledJava size={24} title="Java" />
+                        </SkillIcons>
+                    </ProjectCard>
+                    <ProjectCard>
+                        <ProjectTopRight>
                             <LogoLink href="https://github.com/simonfoy/ServerSettingsGUI" target="_blank"><FaGithub size={18} /></LogoLink>
                             <LogoLink href="https://github.com/simonfoy/ServerSettingsGUI" target="_blank"><FaExternalLinkAlt size={17} /></LogoLink>
                         </ProjectTopRight>
@@ -338,19 +354,6 @@ const HomePage = () => {
                         <SkillIcons>
                             <StyledReact size={24} title="React" />
                         </SkillIcons>
-                    </ProjectCard>
-                    <ProjectCard>
-                        <ProjectTopRight>
-                            <LogoLink href="www.github.com/simonfoy" target="_blank"><FaGithub size={18} /></LogoLink>
-                            <LogoLink href="simonfoy.com"><FaExternalLinkAlt size={17} /></LogoLink>
-                        </ProjectTopRight>
-                        <ProjectTitleContainer>
-                            <ProjectIcon src="assets/projects/portfolio/logo.png" alt="Project Icon" />
-                            <ProjectTitle>Coming Soon...</ProjectTitle>
-                        </ProjectTitleContainer>
-                        <ProjectDescription>
-                            Coming Soon...
-                        </ProjectDescription>
                     </ProjectCard>
                 </ProjectContainer>
             </Bottom>
