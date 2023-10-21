@@ -198,7 +198,7 @@ const Navbar = () => {
                     />
                     <DropdownMenu>
                         <Link style={{ color: 'inherit', textDecoration: 'inherit'}}to="/projects"><ListItem2>Projects</ListItem2></Link>
-                        <ListItem2>Resume</ListItem2>
+                        <ListItem2 onClick={() => window.open('http://simonfoy.com/assets/resume.html', '_blank')}>Resume</ListItem2>
                         <ListItem2 onClick={() => window.open('https://github.com/simonfoy', '_blank')}>Github</ListItem2>
                     </DropdownMenu>
                 </ListItem>
