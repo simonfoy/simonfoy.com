@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Banner from '../components/Banner'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import CommandPrompt from '../components/CommandPrompt'
 
 const Section = styled.div`
   position: relative;
@@ -126,9 +127,95 @@ const ContentContainer = styled.div`
   display: flex;
   gap: 30px;
   
-  @media only screen and (max-width: 940px) {
-    flex-direction: column;
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column-reverse;
   }
+`;
+
+const JourneyTitle = styled.h2`
+  font-size: 28px;
+  text-align: left;
+  margin-bottom: 30px;
+  width: 100%;
+  padding-top: 50px;
+`;
+
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 950px;
+`;
+
+const CommandPromptContainer = styled.div`
+  padding-right: 5px;
+`
+
+const Timeline = styled.div`
+  flex: 2;
+`;
+
+const TimelineContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 5px 0;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 21px;
+    width: 2px;
+    background-color: #007396;
+  }
+`;
+
+const TimelineItem = styled.div`
+  background-color: white;
+  border-radius: 8px;
+  padding: 23px;
+  margin: 10px 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease-in-out;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    transform: translateY(-50%);
+    left: -37px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #007396;
+    background-image: url('path.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+  }
+`;
+
+const Date = styled.h4`
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #007396;
+`;
+
+const EventTitle = styled.h3`
+  font-size: 22px;
+  margin-bottom: 10px;
+`;
+
+const EventDescription = styled.p`
+  font-size: 16px;
+  color: #333;
 `;
 
 const AboutPage = () => {
@@ -153,13 +240,33 @@ const AboutPage = () => {
                     </PictureFrame>
                 </PictureContainer>
                     <ProfileName>Simon Foy</ProfileName>
-                    <ProfileDescription>Lorem ipsum dolor sit amet consectetur adipisicing elit.</ProfileDescription>
+                    <ProfileDescription>Lorem ipsum dolor sit amet.</ProfileDescription>
                     <ButtonContainer>
                         <ResumeButton>Resume</ResumeButton>
                         <MessageButton>Message</MessageButton>
                     </ButtonContainer>
                 </InfoCard>
             </ContentContainer>
+            <JourneyTitle>My Journey</JourneyTitle>
+            <Wrapper>
+              <CommandPromptContainer>
+      <CommandPrompt/>
+      </CommandPromptContainer>
+            <Timeline>
+            <TimelineContainer>
+      <TimelineItem>
+        <EventTitle>Event Title 1</EventTitle>
+        <Date>Jan 2020</Date>
+        <EventDescription>This is a description for the first event on the timeline.</EventDescription>
+      </TimelineItem>
+      <TimelineItem>
+        <EventTitle>Event Title 2</EventTitle>
+        <Date>Feb 2020</Date>
+        <EventDescription>This is a description for the second event on the timeline.</EventDescription>
+      </TimelineItem>
+    </TimelineContainer>
+    </Timeline>
+    </Wrapper>
         </Container2>
         <Footer/>
     </Section>
