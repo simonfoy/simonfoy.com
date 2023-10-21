@@ -83,7 +83,7 @@ const aboutMe = () => {
     return {
       name: 'Simon Foy',
       email: 'hello@simonfoy.com',
-      website: 'simonfoy.com',  // Corrected the website string
+      website: 'simonfoy.com',
     };
   }
 

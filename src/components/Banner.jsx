@@ -34,7 +34,7 @@ const CloseButton = styled.button`
     color: white;
 `;
 
-const CURRENT_VERSION = 5; 
+const CURRENT_VERSION = 8; 
 
 const Banner = () => {
     const storedVersion = parseInt(localStorage.getItem('bannerVersion'), 10);

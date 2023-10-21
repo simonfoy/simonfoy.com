@@ -1,9 +1,55 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 import Banner from '../components/Banner'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import CommandPrompt from '../components/CommandPrompt'
+
+const TypedStyles = createGlobalStyle`
+
+  body::-webkit-scrollbar {
+        display: none;
+  }
+  body {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .highlight1 {
+    color: #3897d3;
+    font-style: italic;
+    font-weight: bold;
+  }
+  .highlight2 {
+    color: #57df79;
+    font-style: italic;
+    font-weight: bold;
+  }
+  .highlight3 {
+    color: #FF4500;
+    font-style: italic;
+    font-weight: bold;
+  }
+  .highlight4 {
+    color: #8527a6;
+    font-style: italic;
+    font-weight: bold;
+  }
+  .highlight5 {
+    color: #4aa9d1;
+    font-style: italic;
+    font-weight: bold;
+  }
+  .highlight6 {
+    color: #B22222;
+    font-style: italic;
+    font-weight: bold;
+  }
+  .highlight7 {
+    color: #E7B43A;
+    font-style: italic;
+    font-weight: bold;
+  }
+`;
 
 const Section = styled.div`
   position: relative;
@@ -220,6 +266,8 @@ const EventDescription = styled.p`
 
 const AboutPage = () => {
   return (
+    <>
+    <TypedStyles/>
     <Section>
         <Container1>
             <Banner/>
@@ -270,6 +318,7 @@ const AboutPage = () => {
         </Container2>
         <Footer/>
     </Section>
+    </>
   )
 }
 
