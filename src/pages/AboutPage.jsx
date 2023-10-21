@@ -168,7 +168,7 @@ const TimelineContainer = styled.div`
     bottom: 0;
     left: 21px;
     width: 2px;
-    background-color: #007396;
+    background-color: #3897d3;
   }
 `;
 
@@ -193,7 +193,7 @@ const TimelineItem = styled.div`
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background-color: #007396;
+    background-color: #3897d3;
     background-image: url('path.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -205,7 +205,7 @@ const TimelineItem = styled.div`
 const Date = styled.h4`
   font-size: 18px;
   margin-bottom: 10px;
-  color: #007396;
+  color: #3897d3;
 `;
 
 const EventTitle = styled.h3`
