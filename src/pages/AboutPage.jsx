@@ -290,9 +290,9 @@ const AboutPage = () => {
                     <ProfileName>Simon Foy</ProfileName>
                     <ProfileDescription>Lorem ipsum dolor sit amet.</ProfileDescription>
                     <ButtonContainer>
-                        <ResumeButton>Resume</ResumeButton>
-                        <MessageButton>Message</MessageButton>
-                    </ButtonContainer>
+                      <ResumeButton onClick={() => window.open('http://simonfoy.com/assets/resume.html', '_blank')}>Resume</ResumeButton>
+                      <MessageButton onClick={() => window.location.href = "mailto:simon.g.foy@outlook.com?subject=Greetings from simonfoy.com"}>Message</MessageButton>
+                  </ButtonContainer>
                 </InfoCard>
             </ContentContainer>
             <JourneyTitle>My Journey</JourneyTitle>
