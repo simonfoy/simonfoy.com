@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled, { createGlobalStyle } from 'styled-components'
 import Banner from '../components/Banner'
 import Navbar from '../components/Navbar'
@@ -265,6 +265,26 @@ const EventDescription = styled.p`
 `;
 
 const AboutPage = () => {
+  const pictures = [
+    "assets/images/home/professional/professional1-glasses.png",
+    "assets/images/home/professional/professional1.png",
+    "assets/images/home/business-casual/business-casual1-glasses.png",
+    "assets/images/home/business-casual/business-casual1.png",
+    "assets/images/home/casual/casual1.png",
+    "assets/images/home/casual/casual1-glasses.png",
+    "assets/images/home/gym/gym1.png",
+    "assets/images/home/gym/gym1-glasses.png"
+  ];
+  const [currentPictureIndex, setCurrentPictureIndex] = useState(0);
+
+  const handlePictureClick = () => {
+      let newIndex;
+      do {
+        newIndex = Math.floor(Math.random() * pictures.length);
+      } while (newIndex === currentPictureIndex);
+  
+      setCurrentPictureIndex(newIndex);
+    };
   return (
     <>
     <TypedStyles/>
@@ -283,8 +303,8 @@ const AboutPage = () => {
                 </Biography>
                 <InfoCard>
                 <PictureContainer>
-                    <PictureFrame>
-                        <Picture src='assets/images/home/professional/professional1-glasses.png'/>
+                    <PictureFrame onClick={handlePictureClick}>
+                        <Picture src={pictures[currentPictureIndex]}/>
                     </PictureFrame>
                 </PictureContainer>
                     <ProfileName>Simon Foy</ProfileName>
