@@ -184,16 +184,29 @@ const JourneyTitle = styled.h2`
   margin-bottom: 30px;
   width: 100%;
   padding-top: 50px;
+  @media only screen and (max-width: 1000px) {
+    padding-left: 35px;
+  }
 `;
 
 const Wrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 950px;
+display: flex;
+justify-content: space-between;
+width: 950px;
+@media only screen and (max-width: 1000px) {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 const CommandPromptContainer = styled.div`
   padding-right: 5px;
+  @media only screen and (max-width: 1000px) {
+    padding-right: 0px;
+    padding-bottom: 60px;
+  }
 `
 
 const Timeline = styled.div`
@@ -210,11 +223,23 @@ const TimelineContainer = styled.div`
   &:before {
     content: "";
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 17px;
+    bottom: 17px;
     left: 21px;
     width: 2px;
     background-color: #3897d3;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    padding-right: 0px;
+    padding-bottom: 60px;
+
+    &:before {
+    content: "";
+    position: absolute;
+    bottom: 67px;
+    left: -28px;
+  }
   }
 `;
 
@@ -245,6 +270,25 @@ const TimelineItem = styled.div`
     background-size: contain;
     background-position: center;
 
+  }
+
+  @media only screen and (max-width: 650px) {
+    width: 450px;
+
+    &:before {
+    content: "";
+    position: absolute;
+    bottom: 67px;
+    left: -36px;
+  }
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 400px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    width: 350px;
   }
 `;
 
