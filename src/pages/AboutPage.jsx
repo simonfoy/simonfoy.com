@@ -4,6 +4,7 @@ import Banner from '../components/Banner'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import CommandPrompt from '../components/CommandPrompt'
+import ReactTyped from 'react-typed'
 
 const TypedStyles = createGlobalStyle`
 
@@ -352,7 +353,22 @@ const AboutPage = () => {
                     </PictureFrame>
                 </PictureContainer>
                     <ProfileName>Simon Foy</ProfileName>
-                    <ProfileDescription>Lorem ipsum dolor sit amet.</ProfileDescription>
+                    <ProfileDescription>
+                    <ReactTyped
+                        strings={[
+                            '<span class="highlight1">Fullstack Developer</span>',
+                            '<span class="highlight2">Frontend Developer</span>',
+                            '<span class="highlight3">Backend Developer</span>',
+                            '<span class="highlight4">Software Engineer</span>',
+                            '<span class="highlight5">System Administrator</span>',
+                            '<span class="highlight6">Cybersecurity Enthusiast</span>',
+                            '<span class="highlight7">Your Next Colleague</span>',
+                        ]}
+                        typeSpeed={45}
+                        backSpeed={25}
+                        loop
+                    />
+                </ProfileDescription>
                     <ButtonContainer>
                       <ResumeButton onClick={() => window.open('http://simonfoy.com/assets/resume.html', '_blank')}>Resume</ResumeButton>
                       <MessageButton onClick={() => window.location.href = "mailto:simon.g.foy@outlook.com?subject=Greetings from simonfoy.com"}>Message</MessageButton>
