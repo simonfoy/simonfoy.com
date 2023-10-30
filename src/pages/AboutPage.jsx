@@ -204,6 +204,7 @@ width: 950px;
 
 const CommandPromptContainer = styled.div`
   padding-right: 5px;
+  padding-top: 15px;
   @media only screen and (max-width: 1000px) {
     padding-right: 0px;
     padding-bottom: 60px;
@@ -309,6 +310,21 @@ const EventDescription = styled.p`
   color: #333;
 `;
 
+const EventDropDownContainer = styled.div`
+  padding-left: 12px;
+`
+
+const EventDropDown = styled.button`
+border: none;
+background-color: #e5e7eb;
+cursor: pointer;
+`
+
+const DropDownImage = styled.img`
+  height: 20px;
+  width: 20px;
+`
+
 const AboutPage = () => {
   const pictures = [
     "assets/images/home/professional/professional1-glasses.png",
@@ -330,6 +346,7 @@ const AboutPage = () => {
   
       setCurrentPictureIndex(newIndex);
     };
+    const [isExpanded, setIsExpanded] = useState(false);
   return (
     <>
     <TypedStyles/>
@@ -382,27 +399,44 @@ const AboutPage = () => {
       </CommandPromptContainer>
             <Timeline>
             <TimelineContainer>
+  <TimelineItem>
+    <EventTitle>IT Specialist - Executive Protection Field Office</EventTitle>
+    <Date>2021 - Present</Date>
+    <EventDescription>Provides support to over 400 assigned special agents, police officers, analysts, physical security specialists, and professional support personnel spread across three continents.</EventDescription>
+  </TimelineItem>
+  
+  {isExpanded && (
+    <>
       <TimelineItem>
-        <EventTitle>IT Specialist - Executive Protection Field Office</EventTitle>
-        <Date>2021 - Present</Date>
-        <EventDescription>Provides support to over 400 assigned special agents, police officers, analysts, physical security specialists, and professional support personnel spread across three continents.</EventDescription>
-      </TimelineItem>
-      <TimelineItem>
-      <EventTitle>Software Developer - Freelancer</EventTitle>
+        <EventTitle>Software Developer - Freelancer</EventTitle>
         <Date>2023 - Present</Date>
         <EventDescription>Develops and deploys custom software solutions tailored to client needs, utilizing a range of programming languages and technologies</EventDescription>
       </TimelineItem>
       <TimelineItem>
-      <EventTitle>Signal Support Team Led - US Army</EventTitle>
+        <EventTitle>Signal Support Team Led - US Army</EventTitle>
         <Date>2018 - 2021</Date>
         <EventDescription>Directed a specialized team managing assets worth over $6M and trained technicians on IT and Communication equipment maintenance.</EventDescription>
       </TimelineItem>
       <TimelineItem>
-      <EventTitle>Communications Terminal Specialist - North Carolina Army National Guard</EventTitle>
+        <EventTitle>Communications Terminal Specialist - North Carolina Army National Guard</EventTitle>
         <Date>2016 - 2018</Date>
         <EventDescription>Established and managed emergency communication links, covering voice, video, and data.</EventDescription>
       </TimelineItem>
-    </TimelineContainer>
+    </>
+  )}
+</TimelineContainer>
+<EventDropDownContainer>
+<EventDropDown onClick={() => setIsExpanded(prev => !prev)}>
+  <DropDownImage
+    src="/assets/images/navbar/down-arrow-grey.svg" 
+    alt={isExpanded ? "Show Less" : "Show More"} 
+    style={{
+      transform: isExpanded ? 'rotate(180deg)' : 'rotate(0deg)', 
+      transition: 'transform 0.3s ease'
+    }}
+  />
+</EventDropDown>
+</EventDropDownContainer>
     </Timeline>
     </Wrapper>
         </Container2>
