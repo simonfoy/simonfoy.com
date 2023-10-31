@@ -184,6 +184,7 @@ const Navbar = () => {
                         <ListItem2>Web Design</ListItem2>
                         <ListItem2>Web Development</ListItem2>
                         <ListItem2>System Administration</ListItem2>
+                        <ListItem2>Middleman</ListItem2>
                     </DropdownMenu>
                 </ListItem>
 
