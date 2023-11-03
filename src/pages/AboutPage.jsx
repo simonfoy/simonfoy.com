@@ -360,8 +360,14 @@ const AboutPage = () => {
             <ContentContainer>
                 <Biography>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident tempore officia, repudiandae unde velit, iusto impedit esse quasi amet consequuntur nesciunt libero ipsa distinctio, animi ipsum. Exercitationem consequuntur impedit eius?
-                    </p>
+                    Hello, I'm Simon Foy, a dedicated IT/Cyber Security Professional and an avid Software Developer. My technical journey, beginning with the fundamentals of web development, has expanded into a career marked by safeguarding data integrity by day and crafting immersive software by night.
+                    </p><br></br>
+
+<p>
+
+I'm driven by the conviction that the web is a place of endless opportunities - a canvas for innovation and creativity. I'm always on the prowl for new learning opportunities, believing that a developer's education never truly ends.
+                    </p><br></br>
+                    <p>I am constantly looking for new opportunities to learn and grow as a developer. If you're looking for a driven and enthusiastic team player to help create amazing software, let's work together!</p>
                 </Biography>
                 <InfoCard>
                 <PictureContainer>
