@@ -306,6 +306,22 @@ const HomePage = () => {
             <Bottom>
                 <Title>Recent Projects</Title>
                 <ProjectContainer>
+                <ProjectCard>
+                        <ProjectTopRight>
+                            <LogoLink href="https://github.com/simonfoy/BedWars" target="_blank"><FaGithub size={18} /></LogoLink>
+                            <LogoLink href="https://github.com/simonfoy/BedWars" target="_blank"><FaExternalLinkAlt size={17} /></LogoLink>
+                        </ProjectTopRight>
+                        <ProjectTitleContainer>
+                            <ProjectIcon src="assets/projects/portfolio/logo.png" alt="Project Icon" />
+                            <ProjectTitle>Bed Wars</ProjectTitle>
+                        </ProjectTitleContainer>
+                        <ProjectDescription>
+                        A dynamic and engaging Minecraft mini-game plugin where players compete on floating islands, defend their beds, and battle to be the last team standing.
+                        </ProjectDescription>
+                        <SkillIcons>
+                            <StyledJava size={24} title="Java" />
+                        </SkillIcons>
+                    </ProjectCard>
                     <ProjectCard>
                         <ProjectTopRight>
                             <LogoLink href="https://github.com/simonfoy/HungerGames" target="_blank"><FaGithub size={18} /></LogoLink>
@@ -337,22 +353,6 @@ const HomePage = () => {
                         </ProjectDescription>
                         <SkillIcons>
                             <StyledJava size={24} title="Java" />
-                        </SkillIcons>
-                    </ProjectCard>
-                    <ProjectCard>
-                        <ProjectTopRight>
-                            <LogoLink href="https://github.com/simonfoy/simonfoy.com" target="_blank"><FaGithub size={18} /></LogoLink>
-                            <LogoLink href="https://simonfoy.com" target="_blank"><FaExternalLinkAlt size={17} /></LogoLink>
-                        </ProjectTopRight>
-                        <ProjectTitleContainer>
-                            <ProjectIcon src="assets/projects/portfolio/logo.png" alt="Project Icon" />
-                            <ProjectTitle>Portfolio</ProjectTitle>
-                        </ProjectTitleContainer>
-                        <ProjectDescription>
-                            Current version of my personal website.
-                        </ProjectDescription>
-                        <SkillIcons>
-                            <StyledReact size={24} title="React" />
                         </SkillIcons>
                     </ProjectCard>
                 </ProjectContainer>
