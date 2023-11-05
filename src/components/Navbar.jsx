@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { Link } from "react-router-dom"
+import { FaDiscord, FaShoppingBasket, FaShoppingCart } from 'react-icons/fa';
 
 const Section = styled.div`
     display: flex;
@@ -32,7 +33,7 @@ const Container = styled.div`
 const Links = styled.div`
     display: flex;
     align-items: center;
-    gap: 400px;
+    gap: 45px;
 `;
 
 const Logo = styled.img`
@@ -45,7 +46,7 @@ const List = styled.ul`
     margin-bottom: 0;
     text-transform: uppercase;
     display: flex;
-    gap: 40px;
+    gap: 45px;
     list-style: none;
     align-items: center;
 
@@ -80,7 +81,9 @@ const ListItem = styled.li`
     display: flex;
     justify-content: center;
     align-items: center;  
+    min-width: 75px;
     font-weight: ${props => props.isHovered ? 'bold' : 'normal'};
+
 
     &:hover {
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -123,6 +126,44 @@ const ArrowDownIcon = styled.img`
     width: 10px;
 `;
 
+const StyledDiscord = styled(FaDiscord)`
+    color: #fff;
+    margin-right: 8px;
+    margin-top: 1px;
+`;
+
+const StyledCart = styled(FaShoppingCart)`
+    color: #fff;
+    margin-right: 8px;
+`;
+
+const ListItem3 = styled.button`
+font-size: 14px;
+  cursor: pointer;
+  position: relative;
+  background-color: #3897d3;
+  width: 100%;
+  min-width: 160px;
+  height: 34px;
+  border-radius: 20px;
+  padding: 12px 16px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.2s, color 0.2s;
+  border: 2px solid transparent; 
+
+  &:hover {
+    background-color: #3897d3;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+  }
+`;
+
 const Menu = styled.img`
     display: none;
     position: absolute;
@@ -161,14 +202,14 @@ const Navbar = () => {
                     </DropdownMenu>
                 </ListItem>
 
-                <Link style={{ color: 'inherit', textDecoration: 'inherit'}}to="/newsletter">
+                {/* <Link style={{ color: 'inherit', textDecoration: 'inherit'}}to="/newsletter">
                     <ListItem 
                         onMouseEnter={() => setHoveredItem('newsletter')} 
                         onMouseLeave={() => setHoveredItem(null)}
                         isHovered={hoveredItem === 'newsletter'}
                     >Newsletter 
                     </ListItem>
-                </Link>
+                </Link> */}
                 <ListItem 
                     onMouseEnter={() => setHoveredItem('services')} 
                     onMouseLeave={() => setHoveredItem(null)}
@@ -203,6 +244,23 @@ const Navbar = () => {
                         <ListItem2 onClick={() => window.open('https://github.com/simonfoy', '_blank')}>Github</ListItem2>
                     </DropdownMenu>
                 </ListItem>
+
+                <Link style={{ color: 'inherit', textDecoration: 'inherit'}}to="/404">
+                    <ListItem3 
+                        onMouseEnter={() => setHoveredItem('discordserver')} 
+                        onMouseLeave={() => setHoveredItem(null)}
+                        isHovered={hoveredItem === 'discordserver'}
+                    ><StyledDiscord/> Discord Server
+                    </ListItem3>
+                </Link>
+                <Link style={{ color: 'inherit', textDecoration: 'inherit'}}to="/404">
+                    <ListItem3 
+                        onMouseEnter={() => setHoveredItem('neworder')} 
+                        onMouseLeave={() => setHoveredItem(null)}
+                        isHovered={hoveredItem === 'neworder'}
+                    ><StyledCart/> New Order
+                    </ListItem3>
+                </Link>
                 </List>
                 <Menu src="https://www.svgrepo.com/show/506800/burger-menu.svg"/>
             </Links>
