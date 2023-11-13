@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { Link } from "react-router-dom"
-import { FaDiscord, FaShoppingBasket, FaShoppingCart } from 'react-icons/fa';
+import { FaDiscord, FaSchool, FaShoppingBasket, FaShoppingCart } from 'react-icons/fa';
 
 const Section = styled.div`
     display: flex;
@@ -103,7 +103,7 @@ const ListItem2 = styled.li`
   position: relative;
   background-color: #fff;
   width: 100%;
-  min-width: 50px;
+  min-width: 75px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   z-index: 1;
@@ -132,7 +132,7 @@ const StyledDiscord = styled(FaDiscord)`
     margin-top: 1px;
 `;
 
-const StyledCart = styled(FaShoppingCart)`
+const StyledCart = styled(FaSchool)`
     color: #fff;
     margin-right: 8px;
 `;
@@ -197,8 +197,6 @@ const Navbar = () => {
                     />
                     <DropdownMenu>
                         <Link style={{ color: 'inherit', textDecoration: 'inherit'}}to="/about"><ListItem2>About Me</ListItem2></Link>
-                        <Link style={{ color: 'inherit', textDecoration: 'inherit'}}to="/reviews"><ListItem2>Reviews</ListItem2></Link>
-                        <Link style={{ color: 'inherit', textDecoration: 'inherit'}}to="/vouches"><ListItem2>Vouches</ListItem2></Link>
                     </DropdownMenu>
                 </ListItem>
 
@@ -221,11 +219,9 @@ const Navbar = () => {
                     />
                     <DropdownMenu>
                         <ListItem2>Minecraft Plugin Development</ListItem2>
-                        <ListItem2>Discord Bot</ListItem2>
                         <ListItem2>Web Design</ListItem2>
                         <ListItem2>Web Development</ListItem2>
                         <ListItem2>System Administration</ListItem2>
-                        <ListItem2>Middleman</ListItem2>
                     </DropdownMenu>
                 </ListItem>
 
@@ -240,7 +236,8 @@ const Navbar = () => {
                     />
                     <DropdownMenu>
                         <Link style={{ color: 'inherit', textDecoration: 'inherit'}}to="/projects"><ListItem2>Projects</ListItem2></Link>
-                        <ListItem2 onClick={() => window.open('http://simonfoy.com/assets/resume.html', '_blank')}>Resume</ListItem2>
+                        <ListItem2 onClick={() => window.open('http://simonfoy.com/assets/resume.pdf', '_blank')}>Resume (PDF)</ListItem2>
+                        <ListItem2 onClick={() => window.open('http://simonfoy.com/assets/resume.html', '_blank')}>Resume (HTML)</ListItem2>
                         <ListItem2 onClick={() => window.open('https://github.com/simonfoy', '_blank')}>Github</ListItem2>
                     </DropdownMenu>
                 </ListItem>
@@ -258,7 +255,7 @@ const Navbar = () => {
                         onMouseEnter={() => setHoveredItem('neworder')} 
                         onMouseLeave={() => setHoveredItem(null)}
                         isHovered={hoveredItem === 'neworder'}
-                    ><StyledCart/> New Order
+                    ><StyledCart/> Academy
                     </ListItem3>
                 </Link>
                 </List>
