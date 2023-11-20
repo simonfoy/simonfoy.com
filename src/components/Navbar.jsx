@@ -81,14 +81,12 @@ const ListItem = styled.li`
     display: flex;
     justify-content: center;
     align-items: center;  
-    min-width: 75px;
+    width: 75px;
     font-weight: ${props => props.isHovered ? 'bold' : 'normal'};
 
 
     &:hover {
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        background-color: #3897d3; 
-        color: white;
+        color: #3897d3; 
         ${DropdownMenu} {
             visibility: visible;
             opacity: 1;
@@ -192,7 +190,7 @@ const Navbar = () => {
                     isHovered={hoveredItem === 'about'}
                 >About
                     <ArrowDownIcon 
-                        src={hoveredItem === 'about' ? "/assets/images/navbar/down-arrow-white.svg" : "/assets/images/navbar/down-arrow-black.svg"} 
+                        src={hoveredItem === 'about' ? "/assets/images/navbar/down-arrow-blue.svg" : "/assets/images/navbar/down-arrow-black.svg"} 
                         alt="Arrow down" 
                     />
                     <DropdownMenu>
@@ -214,11 +212,11 @@ const Navbar = () => {
                     isHovered={hoveredItem === 'services'}
                 >Services
                     <ArrowDownIcon 
-                        src={hoveredItem === 'services' ? "/assets/images/navbar/down-arrow-white.svg" : "/assets/images/navbar/down-arrow-black.svg"} 
+                        src={hoveredItem === 'services' ? "/assets/images/navbar/down-arrow-blue.svg" : "/assets/images/navbar/down-arrow-black.svg"} 
                         alt="Arrow down" 
                     />
                     <DropdownMenu>
-                        <ListItem2>Minecraft Plugin Development</ListItem2>
+                        <ListItem2>Software Development</ListItem2>
                         <ListItem2>Web Design</ListItem2>
                         <ListItem2>Web Development</ListItem2>
                         <ListItem2>System Administration</ListItem2>
@@ -231,7 +229,7 @@ const Navbar = () => {
                     isHovered={hoveredItem === 'portfolio'}
                 >Portfolio
                     <ArrowDownIcon 
-                        src={hoveredItem === 'portfolio' ? "/assets/images/navbar/down-arrow-white.svg" : "/assets/images/navbar/down-arrow-black.svg"} 
+                        src={hoveredItem === 'portfolio' ? "/assets/images/navbar/down-arrow-blue.svg" : "/assets/images/navbar/down-arrow-black.svg"} 
                         alt="Arrow down" 
                     />
                     <DropdownMenu>
@@ -252,10 +250,10 @@ const Navbar = () => {
                 </Link>
                 <Link style={{ color: 'inherit', textDecoration: 'inherit'}}to="/404">
                     <ListItem3 
-                        onMouseEnter={() => setHoveredItem('neworder')} 
+                        onMouseEnter={() => setHoveredItem('youtube')} 
                         onMouseLeave={() => setHoveredItem(null)}
-                        isHovered={hoveredItem === 'neworder'}
-                    ><StyledCart/> Academy
+                        isHovered={hoveredItem === 'youtube'}
+                    ><StyledCart/> YouTube
                     </ListItem3>
                 </Link>
                 </List>

@@ -200,6 +200,70 @@ const ProjectsPage = () => {
           <ProjectContainer>
           <ProjectCard>
                         <ProjectTopRight>
+                            <LogoLink href="https://github.com/simonfoy/CraftRoyale" target="_blank"><FaGithub size={18} /></LogoLink>
+                            <LogoLink href="https://github.com/simonfoy/CraftRoyale" target="_blank"><FaExternalLinkAlt size={17} /></LogoLink>
+                        </ProjectTopRight>
+                        <ProjectTitleContainer>
+                            <ProjectIcon src="assets/projects/portfolio/logo.png" alt="Project Icon" />
+                            <ProjectTitle>Craft Royale</ProjectTitle>
+                        </ProjectTitleContainer>
+                        <ProjectDescription>
+                        A Minecraft Spigot plugin inspired by the popular mobile game Clash Royale. This plugin brings the thrilling tower rush strategy game into the world of Minecraft, offering a unique blend of resource management, tactical gameplay, and Minecraft's creative charm.
+                        </ProjectDescription>
+                        <SkillIcons>
+                            <StyledJava size={24} title="Java" />
+                        </SkillIcons>
+                    </ProjectCard>
+          <ProjectCard>
+                        <ProjectTopRight>
+                            <LogoLink href="https://github.com/simonfoy/Plants-vs-Zombies" target="_blank"><FaGithub size={18} /></LogoLink>
+                            <LogoLink href="https://github.com/simonfoy/Plants-vs-Zombies" target="_blank"><FaExternalLinkAlt size={17} /></LogoLink>
+                        </ProjectTopRight>
+                        <ProjectTitleContainer>
+                            <ProjectIcon src="assets/projects/portfolio/logo.png" alt="Project Icon" />
+                            <ProjectTitle>Plants vs Zombies</ProjectTitle>
+                        </ProjectTitleContainer>
+                        <ProjectDescription>
+                        A Minecraft Spigot plugin that brings the beloved strategy game mechanics of the classic "Plants vs. Zombies" into the Minecraft world. Players can defend their base against waves of zombie attackers using a variety of plant defenses, each with unique abilities and traits.
+                        </ProjectDescription>
+                        <SkillIcons>
+                            <StyledJava size={24} title="Java" />
+                        </SkillIcons>
+                    </ProjectCard>
+          <ProjectCard>
+                        <ProjectTopRight>
+                            <LogoLink href="https://github.com/simonfoy/SmashMobs" target="_blank"><FaGithub size={18} /></LogoLink>
+                            <LogoLink href="https://github.com/simonfoy/SmashMobs" target="_blank"><FaExternalLinkAlt size={17} /></LogoLink>
+                        </ProjectTopRight>
+                        <ProjectTitleContainer>
+                            <ProjectIcon src="assets/projects/portfolio/logo.png" alt="Project Icon" />
+                            <ProjectTitle>Smash Mobs</ProjectTitle>
+                        </ProjectTitleContainer>
+                        <ProjectDescription>
+                        An action-packed Minecraft Spigot plugin that brings the exhilarating experience of mob battles into the Minecraft universe. Players transform into various Minecraft mobs, each equipped with unique abilities and powers, and battle it out in dynamic arenas to be the last one standing.
+                        </ProjectDescription>
+                        <SkillIcons>
+                            <StyledJava size={24} title="Java" />
+                        </SkillIcons>
+                    </ProjectCard>
+          <ProjectCard>
+                        <ProjectTopRight>
+                            <LogoLink href="https://github.com/simonfoy/CraftMasterGUI" target="_blank"><FaGithub size={18} /></LogoLink>
+                            <LogoLink href="https://github.com/simonfoy/CraftMasterGUI" target="_blank"><FaExternalLinkAlt size={17} /></LogoLink>
+                        </ProjectTopRight>
+                        <ProjectTitleContainer>
+                            <ProjectIcon src="assets/projects/portfolio/logo.png" alt="Project Icon" />
+                            <ProjectTitle>CraftMasterGUI</ProjectTitle>
+                        </ProjectTitleContainer>
+                        <ProjectDescription>
+                        A user-friendly Minecraft Spigot plugin designed to enhance the crafting experience for players.
+                        </ProjectDescription>
+                        <SkillIcons>
+                            <StyledJava size={24} title="Java" />
+                        </SkillIcons>
+                    </ProjectCard>
+          <ProjectCard>
+                        <ProjectTopRight>
                             <LogoLink href="https://github.com/simonfoy/BedWars" target="_blank"><FaGithub size={18} /></LogoLink>
                             <LogoLink href="https://github.com/simonfoy/BedWars" target="_blank"><FaExternalLinkAlt size={17} /></LogoLink>
                         </ProjectTopRight>
@@ -208,7 +272,7 @@ const ProjectsPage = () => {
                             <ProjectTitle>TNT Tag</ProjectTitle>
                         </ProjectTitleContainer>
                         <ProjectDescription>
-                        Placeholder description.
+                        an explosive and fast-paced Minecraft Spigot plugin based on the classic game of tag, but with a thrilling twist. In this game, players pass around a live TNT until it explodes, eliminating the player holding it at the time of detonation. The last player standing wins!
                         </ProjectDescription>
                         <SkillIcons>
                             <StyledJava size={24} title="Java" />
@@ -277,66 +341,6 @@ const ProjectsPage = () => {
                   </ProjectDescription>
                   <SkillIcons>
                       <StyledReact size={24} title="React" />
-                  </SkillIcons>
-              </ProjectCard>
-              <ProjectCard>
-                  <ProjectTopRight>
-                      <LogoLink href="https://github.com/simonfoy/simonfoy.com" target="_blank"><FaGithub size={18} /></LogoLink>
-                      <LogoLink href="https://simonfoy.com" target="_blank"><FaExternalLinkAlt size={17} /></LogoLink>
-                  </ProjectTopRight>
-                  <ProjectTitleContainer>
-                      <ProjectIcon src="assets/projects/portfolio/logo.png" alt="Project Icon" />
-                      <ProjectTitle>Placeholder</ProjectTitle>
-                  </ProjectTitleContainer>
-                  <ProjectDescription>
-                      Placeholder description.
-                  </ProjectDescription>
-                  <SkillIcons>
-                  </SkillIcons>
-              </ProjectCard>
-              <ProjectCard>
-                  <ProjectTopRight>
-                      <LogoLink href="https://github.com/simonfoy/simonfoy.com" target="_blank"><FaGithub size={18} /></LogoLink>
-                      <LogoLink href="https://simonfoy.com" target="_blank"><FaExternalLinkAlt size={17} /></LogoLink>
-                  </ProjectTopRight>
-                  <ProjectTitleContainer>
-                      <ProjectIcon src="assets/projects/portfolio/logo.png" alt="Project Icon" />
-                      <ProjectTitle>Placeholder</ProjectTitle>
-                  </ProjectTitleContainer>
-                  <ProjectDescription>
-                      Placeholder description.
-                  </ProjectDescription>
-                  <SkillIcons>
-                  </SkillIcons>
-              </ProjectCard>
-              <ProjectCard>
-                  <ProjectTopRight>
-                      <LogoLink href="https://github.com/simonfoy/simonfoy.com" target="_blank"><FaGithub size={18} /></LogoLink>
-                      <LogoLink href="https://simonfoy.com" target="_blank"><FaExternalLinkAlt size={17} /></LogoLink>
-                  </ProjectTopRight>
-                  <ProjectTitleContainer>
-                      <ProjectIcon src="assets/projects/portfolio/logo.png" alt="Project Icon" />
-                      <ProjectTitle>Placeholder</ProjectTitle>
-                  </ProjectTitleContainer>
-                  <ProjectDescription>
-                      Placeholder description.
-                  </ProjectDescription>
-                  <SkillIcons>
-                  </SkillIcons>
-              </ProjectCard>
-              <ProjectCard>
-                  <ProjectTopRight>
-                      <LogoLink href="https://github.com/simonfoy/simonfoy.com" target="_blank"><FaGithub size={18} /></LogoLink>
-                      <LogoLink href="https://simonfoy.com" target="_blank"><FaExternalLinkAlt size={17} /></LogoLink>
-                  </ProjectTopRight>
-                  <ProjectTitleContainer>
-                      <ProjectIcon src="assets/projects/portfolio/logo.png" alt="Project Icon" />
-                      <ProjectTitle>Placeholder</ProjectTitle>
-                  </ProjectTitleContainer>
-                  <ProjectDescription>
-                      Placeholder description.
-                  </ProjectDescription>
-                  <SkillIcons>
                   </SkillIcons>
               </ProjectCard>
           </ProjectContainer>

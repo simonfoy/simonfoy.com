@@ -308,47 +308,47 @@ const HomePage = () => {
                 <ProjectContainer>
                 <ProjectCard>
                         <ProjectTopRight>
-                            <LogoLink href="https://github.com/simonfoy/BedWars" target="_blank"><FaGithub size={18} /></LogoLink>
-                            <LogoLink href="https://github.com/simonfoy/BedWars" target="_blank"><FaExternalLinkAlt size={17} /></LogoLink>
+                            <LogoLink href="https://github.com/simonfoy/CraftRoyale" target="_blank"><FaGithub size={18} /></LogoLink>
+                            <LogoLink href="https://github.com/simonfoy/CraftRoyale" target="_blank"><FaExternalLinkAlt size={17} /></LogoLink>
                         </ProjectTopRight>
                         <ProjectTitleContainer>
                             <ProjectIcon src="assets/projects/portfolio/logo.png" alt="Project Icon" />
-                            <ProjectTitle>TNT Tag</ProjectTitle>
+                            <ProjectTitle>Craft Royale</ProjectTitle>
                         </ProjectTitleContainer>
                         <ProjectDescription>
-                        Placeholder description.
+                        A Minecraft Spigot plugin inspired by the popular mobile game Clash Royale. This plugin brings the thrilling tower rush strategy game into the world of Minecraft, offering a unique blend of resource management, tactical gameplay, and Minecraft's creative charm.
                         </ProjectDescription>
                         <SkillIcons>
                             <StyledJava size={24} title="Java" />
                         </SkillIcons>
                     </ProjectCard>
-                <ProjectCard>
+          <ProjectCard>
                         <ProjectTopRight>
-                            <LogoLink href="https://github.com/simonfoy/BedWars" target="_blank"><FaGithub size={18} /></LogoLink>
-                            <LogoLink href="https://github.com/simonfoy/BedWars" target="_blank"><FaExternalLinkAlt size={17} /></LogoLink>
+                            <LogoLink href="https://github.com/simonfoy/Plants-vs-Zombies" target="_blank"><FaGithub size={18} /></LogoLink>
+                            <LogoLink href="https://github.com/simonfoy/Plants-vs-Zombies" target="_blank"><FaExternalLinkAlt size={17} /></LogoLink>
                         </ProjectTopRight>
                         <ProjectTitleContainer>
                             <ProjectIcon src="assets/projects/portfolio/logo.png" alt="Project Icon" />
-                            <ProjectTitle>Bed Wars</ProjectTitle>
+                            <ProjectTitle>Plants vs Zombies</ProjectTitle>
                         </ProjectTitleContainer>
                         <ProjectDescription>
-                        A dynamic and engaging Minecraft mini-game plugin where players compete on floating islands, defend their beds, and battle to be the last team standing.
+                        A Minecraft Spigot plugin that brings the beloved strategy game mechanics of the classic "Plants vs. Zombies" into the Minecraft world. Players can defend their base against waves of zombie attackers using a variety of plant defenses, each with unique abilities and traits.
                         </ProjectDescription>
                         <SkillIcons>
                             <StyledJava size={24} title="Java" />
                         </SkillIcons>
                     </ProjectCard>
-                    <ProjectCard>
+          <ProjectCard>
                         <ProjectTopRight>
-                            <LogoLink href="https://github.com/simonfoy/HungerGames" target="_blank"><FaGithub size={18} /></LogoLink>
-                            <LogoLink href="https://github.com/simonfoy/HungerGames" target="_blank"><FaExternalLinkAlt size={17} /></LogoLink>
+                            <LogoLink href="https://github.com/simonfoy/SmashMobs" target="_blank"><FaGithub size={18} /></LogoLink>
+                            <LogoLink href="https://github.com/simonfoy/SmashMobs" target="_blank"><FaExternalLinkAlt size={17} /></LogoLink>
                         </ProjectTopRight>
                         <ProjectTitleContainer>
                             <ProjectIcon src="assets/projects/portfolio/logo.png" alt="Project Icon" />
-                            <ProjectTitle>Hunger Games</ProjectTitle>
+                            <ProjectTitle>Smash Mobs</ProjectTitle>
                         </ProjectTitleContainer>
                         <ProjectDescription>
-                            An immersive Minecraft plugin that transports players into the intense world of the Hunger Games.
+                        An action-packed Minecraft Spigot plugin that brings the exhilarating experience of mob battles into the Minecraft universe. Players transform into various Minecraft mobs, each equipped with unique abilities and powers, and battle it out in dynamic arenas to be the last one standing.
                         </ProjectDescription>
                         <SkillIcons>
                             <StyledJava size={24} title="Java" />
