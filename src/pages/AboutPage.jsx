@@ -393,7 +393,7 @@ I'm driven by the conviction that the web is a place of endless opportunities - 
                     />
                 </ProfileDescription>
                     <ButtonContainer>
-                      <ResumeButton onClick={() => window.open('http://simonfoy.com/assets/resume.html', '_blank')}>Resume</ResumeButton>
+                      <ResumeButton onClick={() => window.open('http://simonfoy.com/assets/resume.pdf', '_blank')}>Resume</ResumeButton>
                       <MessageButton onClick={() => window.location.href = "mailto:simon.g.foy@outlook.com?subject=Greetings from simonfoy.com"}>Message</MessageButton>
                   </ButtonContainer>
                 </InfoCard>
